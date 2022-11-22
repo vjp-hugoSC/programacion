@@ -19,6 +19,7 @@ public class Ejercicio11t3 {
         for (i=1; i<=6; i++){
             System.out.println("HOLA"+i);
         }
+        System.out.println("FIN");
     }
     
 }

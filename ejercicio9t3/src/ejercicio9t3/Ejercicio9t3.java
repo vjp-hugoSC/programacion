@@ -16,7 +16,7 @@ public class Ejercicio9t3 {
      */
     public static void main(String[] args) {
         Scanner entrada= new Scanner(System.in);
-        int n1, n2, n3, n4;
+        int n1, n2, n3, n4, aux;
         System.out.println("Por favor, Introduzca el primer numero: ");
         n1=entrada.nextInt();
         System.out.println("Ahora, Introduzca el segundo numero: ");
@@ -26,7 +26,10 @@ public class Ejercicio9t3 {
         System.out.println("Por ultimo, Introduzca el cuarto numero: ");
         n4=entrada.nextInt();
         if (n1>n2) {
-            
+            aux=n1;
+            n1=n2;
+            n2=aux;
+                
         }
     }
     

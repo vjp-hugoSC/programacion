@@ -15,13 +15,13 @@ public class Ejercicio12t3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int x = 11;
+        int i = 11;
         do {
-            if (x%2==0){
-                System.out.println(x+ " Es un par entre 11 y 133");
+            if (i%2==0){
+                System.out.println(i+ " Es un par entre 11 y 133");
             }
-            x++;
-        }while (x<133);
+            i++;
+        }while (i<=133);
         
     }
     
