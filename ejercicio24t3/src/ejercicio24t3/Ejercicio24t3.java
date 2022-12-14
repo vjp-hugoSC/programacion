@@ -16,7 +16,7 @@ public class Ejercicio24t3 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner (System.in);
-        int n1, n2;
+        int n2;
         
         do{
             System.out.println("Por favor introduzca un numero:");
@@ -25,6 +25,13 @@ public class Ejercicio24t3 {
                 System.out.println("Te has confundido, el numero ha de ser mayor a 0");
             }
         }while(n2<1);
+        
+        for(int i=1;i<=n2;i++) {
+            if((i%3)==0){
+                System.out.println(i);
+            }
+                
+    }
         
         
     }
