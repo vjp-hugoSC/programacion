@@ -15,8 +15,15 @@ public class Ejercicio23t2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
-        
+        double precio;
+        int uds;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Por favor, introduzca el precio del modelo de ordenador que desea comprar: ");
+        precio = teclado.nextDouble();
+        System.out.println("¿Cuántas unidades quiere llevarse? ");
+        uds=teclado.nextInt();
+        double resultado= precio*(double)uds;
+        System.out.println("El precio total de su compra es: "+resultado);
     }
     
 }
