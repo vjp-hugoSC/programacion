@@ -22,7 +22,7 @@ public class Ejercicio23t2 {
         precio = teclado.nextDouble();
         System.out.println("¿Cuántas unidades quiere llevarse? ");
         uds=teclado.nextInt();
-        double resultado= precio*(double)uds;
+        double resultado= precio*uds;
         System.out.println("El precio total de su compra es: "+resultado);
     }
     
