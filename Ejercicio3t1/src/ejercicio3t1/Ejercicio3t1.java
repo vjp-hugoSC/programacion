@@ -3,29 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejercicio27t2;
+package ejercicio3t1;
+
 import java.util.Scanner;
+
 /**
  *
- * @author Hugo
+ * @author hserranoc01
  */
-public class Ejercicio27t2 {
+public class Ejercicio3t1 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n1,doble,cubo;
         Scanner teclado = new Scanner(System.in);
         
+        int n1;
+        
         System.out.println("Por favor, introduzca un número: ");
-        n1= teclado.nextInt();
+        n1 = teclado.nextInt();
         
-        doble = n1*n1;
-        System.out.println("El doble de "+n1+ " es: "+doble);
-        
-        cubo = n1*n1*n1;
-        System.out.println("El cubo de "+n1+ " es: "+cubo);
+        if(n1<0){
+            System.out.println("El número es negativo");
+        }
+        else {
+            System.out.println("El numero es positivo");
+        }
     }
     
 }

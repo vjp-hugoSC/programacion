@@ -17,12 +17,16 @@ public class Ejercicio25t2 {
     public static void main(String[] args) {
         int n1,n2,n3,suma,producto;
         Scanner teclado = new Scanner(System.in);
+        
         System.out.println("Por favor, introduzca el primer número: ");
         n1 = teclado.nextInt();
+        
         System.out.println("Por favor, introduzca el segundo número: ");
         n2 = teclado.nextInt();
+        
         System.out.println("Por favor, introduzca el tercer número: ");
         n3 = teclado.nextInt();
+        
         suma = n1+n2+n3;
         producto = n1*n2*n3;
         System.out.println("La suma de los numeros introducidos es: "+suma);

@@ -10,13 +10,13 @@ package ejercicio9t2;
  * @author Hugo
  */
 public class Ejercicio9t2 {
-final static double PI=3.1415;
+    final static float PI=3.1415f;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         float radio=3.55f;
-        double resultado=((2*PI)*radio);
+        float resultado=((2*PI)*radio);
         System.out.println("La Longitud de una circunferencia cuyo radio vale 3.55 sería de: "+resultado);
     }
     
