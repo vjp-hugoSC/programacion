@@ -16,14 +16,13 @@ public class Ejercicio15t3 {
      */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int x;
+        int x,mult=0;
         System.out.println("Introduzca un número para calcular su tabla de multiplicar: ");
         x=entrada.nextInt();
         int i=0;
-        do {
+        for(mult=0; mult< 11; mult++){
             
-            
-        }while(i<11);
+        }
     }
     
 }

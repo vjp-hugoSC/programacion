@@ -21,7 +21,7 @@ public class Ejercicio13t3 {
             if (x%2==0){
                 System.out.println(x+" Es un numero par entre 11 y 133");
             }
-            x++;
+                x++;     
         }
     }
 }
