@@ -11,9 +11,6 @@ package ejercicio2t5;
  */
 public class Ejercicio2t5 {
 
-    public class curso{
-        private String nombre;
-        private int numerohoras;
     }
     public static void main(String[] args) {
         // TODO code application logic here
