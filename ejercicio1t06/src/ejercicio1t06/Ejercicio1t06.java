@@ -15,15 +15,17 @@ public class Ejercicio1t06 {
 
     public static void rellenarVector(int vector[]) {
         Scanner teclado = new Scanner(System.in);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < vector.length; i++) {
             System.out.println("Introduce un valor para la celda " + i + ": ");
             vector[i] = teclado.nextInt();
         }
     }
 
-    public static void mostrarVector(int vector[]) {
-        for (int i = 0; i < 10; i++) {
-            System.out.println("El valor guardado en la posición " + i + "es :" + vector[i]);
+    public static void mostrarParesDelVector(int vector[]) {
+        for (int i = 0; i < vector.length; i++) {
+            if  (vector[i] % 2 == 0){
+                System.out.println("El valor guardado en la posición " + i + "es :" + vector[i]);
+            }
         }
 
     }
@@ -34,7 +36,7 @@ public class Ejercicio1t06 {
     public static void main(String[] args) {
         int[] vector = new int[10];
         rellenarVector(vector);
-        mostrarVector(vector);
+        mostrarParesDelVector(vector);
     }
 
 }

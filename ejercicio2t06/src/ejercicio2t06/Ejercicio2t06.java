@@ -29,9 +29,9 @@ public class Ejercicio2t06 {
     
     public static void intercambiarVector(int vector[]){
         int aux;
-        aux=vector[2];
-        vector[2]=vector[4];
-        vector[4]=aux;
+        aux=vector[1];
+        vector[1]=vector[3];
+        vector[3]=aux;
         for (int i = 0; i < 7; i++) {
             System.out.println("El valor guardado en la posición " + i + " es :" + vector[i]);
         }
