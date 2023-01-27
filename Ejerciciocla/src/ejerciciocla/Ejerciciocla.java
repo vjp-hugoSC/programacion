@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ejericcio8t06;
+package ejerciciocla;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author hserranoc01
  */
-public class Ejericcio8t06 {
+public class Ejerciciocla {
 
     public static void rellenarVector(int vector[]) {
         Scanner teclado = new Scanner(System.in);
@@ -20,14 +20,29 @@ public class Ejericcio8t06 {
             vector[i] = teclado.nextInt();
         }
     }
-    //aux=numero%10
-    //vector[i]=aux
-    //numero=numero/10
+
+    public static void mostrarVector(int vector[]) {
+        for (int i = 0; i < vector.length; i++) {
+            System.out.println("El valor guardado en la posición " + i + "es :" + vector[i]);
+        }
+
+    }
+
+    public static void pedirNumero() {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Por favor, introduzca un número");
+        return;
+    }
+    public static void comprobarNumero(int num,int vector[]){
+        
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        int[] vector = new int[10];
+        rellenarVector(vector);
+        mostrarVector(vector);
     }
 
 }
