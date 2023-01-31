@@ -32,9 +32,19 @@ public class Ejercicio17t06 {
             System.out.println("[" + vector[i] + "]");
         }
     }
-    public static void ordenarVector(int[] vector){
-        
+
+    public static void ordenarVector(int[] vector) {
+        int aux = 0;
+        for (int i = 0; i < vector.length - 1; i++) {
+            for (int j = 0; j < vector.length; j++) {
+                if (j > j + 1) {
+                    aux = j;
+                }
+            }
+
+        }
     }
+
     /**
      * @param args the command line arguments
      */
