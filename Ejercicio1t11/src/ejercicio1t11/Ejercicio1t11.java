@@ -34,7 +34,7 @@ public class Ejercicio1t11 {
     }
 
     public static void rellenarDia(Map<Integer, Dia> mapa) {
-        for (int i = 0; i < 31; i++) {
+        for (int i = 1; i < 31; i++) {
             mapa.put(i, rellenarTemperaturas());
         }
     }
