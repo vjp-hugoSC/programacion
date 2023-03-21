@@ -122,6 +122,9 @@ public class Ejercicio2T11 {
         } while (opc != 2);
     }
 
+    public static void comprarProductos(Map<Integer, Producto> mapa){
+        System.out.println("La lista de los productos que hay disponible es la siguiente: "+mapa.toString());
+    }
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         Map<Integer, Producto> mapa = new HashMap<>();
@@ -140,7 +143,7 @@ public class Ejercicio2T11 {
                     System.out.println("\n");
                     break;
                 case 2:
-
+                    menuCompra(mapa);
                     break;
                 case 3:
                     System.out.println("Has salido del menu.");
