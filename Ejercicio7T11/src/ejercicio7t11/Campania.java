@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Campania {
     private String nombreC;
-    private HashMap<Integer, Donacion> conjunto;
+    private HashSet<Donacion> conjunto;
 
     public Campania() {
         this.conjunto = new HashMap<>();
