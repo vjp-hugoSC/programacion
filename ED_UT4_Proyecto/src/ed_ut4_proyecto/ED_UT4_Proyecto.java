@@ -2,16 +2,25 @@ package ed_ut4_proyecto;
 
 import java.util.Scanner;
 
-public class ED_UT4_Proyecto {
 /**
- * El método main es el punto de entrada de la aplicación.
- * Se encarga de inicializar un objeto Scanner para recibir la entrada del usuario, 
- * y un arreglo de objetos Pelicula de tamaño 2.
- * A continuación, se muestra un menú con 6 opciones que el usuario puede elegir.
- * Cada opción llama a una función auxiliar que realiza una operación específica con el arreglo de objetos Pelicula.
- * La aplicación se ejecuta en un bucle do-while que se repite hasta que el usuario elige la opción "Salir" (6).
- * @param args Argumentos de la línea de comandos. No se utilizan en este programa.
+ * Esta clase contiene el método principal (main) del programa que permite al
+ * usuario: rellenar y mostrar información de películas y socios, mostrar la
+ * película más rentable, la menos rentable, y buscar información de una
+ * película en particular. Además contiene métodos auxiliares para rellenar y
+ * mostrar información de películas y socios.
  */
+public class ED_UT4_Proyecto {
+
+    /**
+     * El método main crea un objeto Scanner para leer entradas del usuario y un
+     * array de objetos Pelicula. Luego se muestra un menú que permite al
+     * usuario seleccionar diferentes opciones. El bucle do-while permite que el
+     * usuario seleccione diferentes opciones hasta que seleccione la opción de
+     * salir (6).
+     *
+     * @param args los argumentos de línea de comando no se utilizan en este
+     * programa.
+     */
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         Pelicula[] vPeliculas = new Pelicula[2];
@@ -55,6 +64,13 @@ public class ED_UT4_Proyecto {
         } while (opc != 6);
     }
 
+    /**
+     * Este método recibe un array de objetos Pelicula y utiliza métodos
+     * auxiliares para rellenar información de título, precio de licencia y
+     * socios para cada objeto Pelicula en el array.
+     *
+     * @param vPeliculas un array de objetos Pelicula.
+     */
     public static void rellenar(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         String n;
@@ -69,6 +85,13 @@ public class ED_UT4_Proyecto {
         }
     }
 
+    /**
+     * Este método recibe un array de objetos Pelicula y utiliza un objeto
+     * Scanner para pedir al usuario el título de cada película y almacenarlo en
+     * el objeto Pelicula correspondiente.
+     *
+     * @param vPeliculas un array de objetos Pelicula.
+     */
     public static void rellenarTitulo(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         String t;
@@ -80,6 +103,13 @@ public class ED_UT4_Proyecto {
         }
     }
 
+    /**
+     * Este método recibe un array de objetos Pelicula y utiliza un objeto
+     * Scanner para pedir al usuario el nombre de cada socio y almacenarlo en el
+     * objeto Pelicula correspondiente.
+     *
+     * @param vPeliculas un array de objetos Pelicula.
+     */
     public static void rellenarPrecioLicencia(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         float l;
@@ -91,6 +121,13 @@ public class ED_UT4_Proyecto {
         }
     }
 
+    /**
+     * Este método recibe un array de objetos Pelicula y utiliza un objeto
+     * Scanner para pedir al usuario el nombre de cada socio y almacenarlo en el
+     * objeto Pelicula correspondiente.
+     *
+     * @param vPeliculas un array de objetos Pelicula.
+     */
     public static void rellenarNombreSocio(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         String n;
@@ -104,6 +141,13 @@ public class ED_UT4_Proyecto {
         }
     }
 
+    /**
+     * Este método recibe un array de objetos Pelicula y utiliza un objeto
+     * Scanner para pedir al usuario el precio abonado por cada socio y
+     * almacenarlo en el objeto Pelicula correspondiente.
+     *
+     * @param vPeliculas un array de objetos Pelicula.
+     */
     public static void rellenarPrecioAbonado(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         float precioA;
@@ -117,12 +161,24 @@ public class ED_UT4_Proyecto {
         }
     }
 
+    /**
+     * Muestra la información de todas las películas en un arreglo de películas.
+     *
+     * @param vPeliculas el arreglo de películas a mostrar
+     */
+
     public static void mostrar(Pelicula[] vPeliculas) {
         for (int i = 0; i < vPeliculas.length; i++) {
             vPeliculas[i].mostrarPelicula();
         }
     }
 
+    /**
+     * Encuentra la película más rentable en un arreglo de películas y la
+     * imprime en pantalla.
+     *
+     * @param vPeliculas el arreglo de películas a analizar
+     */
     public static void masRentable(Pelicula[] vPeliculas) {
         String t;
         float rAct, rMax;
@@ -138,6 +194,12 @@ public class ED_UT4_Proyecto {
         System.out.println("La película " + t + " con una rentabilidad de " + rMax + " euros es la mas rentable");
     }
 
+    /**
+     * Encuentra la película menos rentable en un arreglo de películas y la
+     * imprime en pantalla.
+     *
+     * @param vPeliculas el arreglo de películas a analizar
+     */
     public static void menosRentable(Pelicula[] vPeliculas) {
         String t;
         float rAct, rMin;
@@ -153,6 +215,12 @@ public class ED_UT4_Proyecto {
         System.out.println("La película " + t + " con una rentabilidad de " + rMin + " euros es la menos rentable");
     }
 
+    /**
+     * Busca una película por título en un arreglo de películas y la muestra en
+     * pantalla si es encontrada.
+     *
+     * @param vPeliculas el arreglo de películas a buscar
+     */
     public static void buscarPelicula(Pelicula[] vPeliculas) {
         Scanner teclado = new Scanner(System.in);
         String t;
